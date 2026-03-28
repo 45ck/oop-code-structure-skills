@@ -91,9 +91,9 @@ LICENSE                              MIT
 
 ## Related workflow agents
 
-- [backend-engineer](https://github.com/45ck/workflow-agents) - Apply class and object-structure guidance in implementation
-- [web-engineer](https://github.com/45ck/workflow-agents) - Use class-boundary guidance in web-layer design
-- [quality-reviewer](https://github.com/45ck/workflow-agents) - Review cohesion, structure, and maintainability
+- [backend-engineer](https://github.com/45ck/skill-harness) - Apply class and object-structure guidance in implementation
+- [web-engineer](https://github.com/45ck/skill-harness) - Use class-boundary guidance in web-layer design
+- [quality-reviewer](https://github.com/45ck/skill-harness) - Review cohesion, structure, and maintainability
 
 ## Related skill packs
 
