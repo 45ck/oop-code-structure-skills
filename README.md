@@ -89,6 +89,12 @@ uninstall.sh                         global uninstaller
 LICENSE                              MIT
 ```
 
+## Related workflow agents
+
+- [backend-engineer](https://github.com/45ck/workflow-agents) - Apply class and object-structure guidance in implementation
+- [web-engineer](https://github.com/45ck/workflow-agents) - Use class-boundary guidance in web-layer design
+- [quality-reviewer](https://github.com/45ck/workflow-agents) - Review cohesion, structure, and maintainability
+
 ## Related skill packs
 
 - [business-analysis-skills](https://github.com/45ck/business-analysis-skills) - Business analysis techniques, workflows, and quality checks
