@@ -1,0 +1,154 @@
+{
+  "name": "oop-code-structure-pack",
+  "version": "0.1.0",
+  "type": "skill-pack",
+  "summary": "Object-oriented design and code-structure review pack for Claude Code-style workflows.",
+  "recommended_order": [
+    "class-responsibility-checker",
+    "encapsulation-reviewer",
+    "constructor-sanity-checker",
+    "equals-hashcode-reviewer",
+    "static-vs-instance-reviewer",
+    "method-cohesion-checker",
+    "overloading-overriding-reviewer",
+    "inheritance-vs-composition-advisor",
+    "visibility-modifier-reviewer",
+    "immutability-opportunity-finder",
+    "object-lifecycle-reviewer",
+    "naming-and-abstraction-reviewer"
+  ],
+  "skills": [
+    {
+      "id": "class-responsibility-checker",
+      "path": "skills/class-responsibility-checker/SKILL.md",
+      "purpose": "Check whether each class has a clear, coherent reason to change and a sensible responsibility boundary.",
+      "handoffs": [
+        "encapsulation-reviewer",
+        "method-cohesion-checker",
+        "inheritance-vs-composition-advisor"
+      ]
+    },
+    {
+      "id": "encapsulation-reviewer",
+      "path": "skills/encapsulation-reviewer/SKILL.md",
+      "purpose": "Review fields, methods, and object interactions for information hiding, invariant protection, and leakage of internal state.",
+      "handoffs": [
+        "visibility-modifier-reviewer",
+        "immutability-opportunity-finder",
+        "constructor-sanity-checker"
+      ]
+    },
+    {
+      "id": "constructor-sanity-checker",
+      "path": "skills/constructor-sanity-checker/SKILL.md",
+      "purpose": "Review constructors for clarity, invariant establishment, dependency sanity, and avoidance of hidden complexity.",
+      "handoffs": [
+        "object-lifecycle-reviewer",
+        "encapsulation-reviewer",
+        "immutability-opportunity-finder"
+      ]
+    },
+    {
+      "id": "equals-hashcode-reviewer",
+      "path": "skills/equals-hashcode-reviewer/SKILL.md",
+      "purpose": "Review equality, identity, hashing, and value-object semantics so objects behave predictably in collections and comparisons.",
+      "handoffs": [
+        "immutability-opportunity-finder",
+        "class-responsibility-checker",
+        "naming-and-abstraction-reviewer"
+      ]
+    },
+    {
+      "id": "static-vs-instance-reviewer",
+      "path": "skills/static-vs-instance-reviewer/SKILL.md",
+      "purpose": "Decide whether data or behavior belongs on the class, the instance, or neither.",
+      "handoffs": [
+        "class-responsibility-checker",
+        "visibility-modifier-reviewer",
+        "object-lifecycle-reviewer"
+      ]
+    },
+    {
+      "id": "method-cohesion-checker",
+      "path": "skills/method-cohesion-checker/SKILL.md",
+      "purpose": "Check whether methods are doing one coherent job, expose the right abstraction, and avoid mixed responsibility.",
+      "handoffs": [
+        "extract-method-refactor if present",
+        "class-responsibility-checker",
+        "naming-and-abstraction-reviewer"
+      ]
+    },
+    {
+      "id": "overloading-overriding-reviewer",
+      "path": "skills/overloading-overriding-reviewer/SKILL.md",
+      "purpose": "Review whether overloading and overriding choices are safe, clear, and consistent with polymorphic intent.",
+      "handoffs": [
+        "inheritance-vs-composition-advisor",
+        "visibility-modifier-reviewer",
+        "naming-and-abstraction-reviewer"
+      ]
+    },
+    {
+      "id": "inheritance-vs-composition-advisor",
+      "path": "skills/inheritance-vs-composition-advisor/SKILL.md",
+      "purpose": "Decide whether a relationship should be modeled through inheritance, composition, aggregation, or delegation.",
+      "handoffs": [
+        "class-responsibility-checker",
+        "overloading-overriding-reviewer",
+        "object-lifecycle-reviewer"
+      ]
+    },
+    {
+      "id": "visibility-modifier-reviewer",
+      "path": "skills/visibility-modifier-reviewer/SKILL.md",
+      "purpose": "Review public, protected, internal/package, and private surfaces for minimal exposure and clean APIs.",
+      "handoffs": [
+        "encapsulation-reviewer",
+        "class-responsibility-checker",
+        "api-contract-writer if present"
+      ]
+    },
+    {
+      "id": "immutability-opportunity-finder",
+      "path": "skills/immutability-opportunity-finder/SKILL.md",
+      "purpose": "Identify where value objects, read-only state, or immutable design would reduce bugs and simplify reasoning.",
+      "handoffs": [
+        "constructor-sanity-checker",
+        "equals-hashcode-reviewer",
+        "object-lifecycle-reviewer"
+      ]
+    },
+    {
+      "id": "object-lifecycle-reviewer",
+      "path": "skills/object-lifecycle-reviewer/SKILL.md",
+      "purpose": "Review creation, ownership, mutation, disposal, and state-transition responsibilities across objects.",
+      "handoffs": [
+        "constructor-sanity-checker",
+        "inheritance-vs-composition-advisor",
+        "class-responsibility-checker"
+      ]
+    },
+    {
+      "id": "naming-and-abstraction-reviewer",
+      "path": "skills/naming-and-abstraction-reviewer/SKILL.md",
+      "purpose": "Review whether names, interfaces, and abstractions communicate intent cleanly and match the underlying domain.",
+      "handoffs": [
+        "class-responsibility-checker",
+        "method-cohesion-checker",
+        "visibility-modifier-reviewer"
+      ]
+    }
+  ],
+  "templates": [
+    "templates/class-review-template.md",
+    "templates/encapsulation-checklist.md",
+    "templates/constructor-review-template.md",
+    "templates/equality-semantics-template.md",
+    "templates/static-vs-instance-template.md",
+    "templates/method-cohesion-template.md",
+    "templates/inheritance-vs-composition-template.md",
+    "templates/visibility-surface-template.md",
+    "templates/object-lifecycle-template.md",
+    "templates/refactor-recommendations-template.md"
+  ]
+}
